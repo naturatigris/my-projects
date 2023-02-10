@@ -6,19 +6,21 @@ import sys
 
 
 class VendingMachine():
-    def __init__(self,variable1,variable2):
-        self.variable1=variable1
-        self.variable2=variable2
+    def __init__(self,items,val):
+        self.item=items
+        self.val=val
 
-    def buy(self,x,y):
-        if(self.variable1>=x and x*self.variable2<=y):
-            self.variable1-=x
-            return y-(x*self.variable2)
-        else:
-            if(self.variable1<x):
-                return "Not enough items in the machine"
+    def buy(self,neededitems,assets):
+        if self.item>=neededitems:
+            new_val=neededitems*self.val
+            if new_val<=assets:
+               self.items-=neededitems
+               return assets-(new_val)
             else:
-                return "Not enough coins"
+               if(self.variable1<x):
+                 return "shortage of items"
+               else:
+                 return "shortage of coins"
             
             
          
