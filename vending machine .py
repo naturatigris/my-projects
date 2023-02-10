@@ -4,16 +4,6 @@ import random
 import re
 import sys
 
-
-class VendingMachine():
-    def __init__(self,variable1,variable2):
- import math
-import os
-import random
-import re
-import sys
-
-
 class VendingMachine():
     def __init__(self,variable1,variable2):
         self.variable1=variable1
