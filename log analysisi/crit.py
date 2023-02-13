@@ -1,7 +1,7 @@
 from statistics import mode
 import pandas as pd
 import matplotlib.pyplot as plt
-file=open(r"/home/sandhya/.cache/.fr-aZJure/BMC_LOG/crit.log","r")
+file=open(" enter the file location ")
 cnt=0
 c=file.readlines()
 l=[]
